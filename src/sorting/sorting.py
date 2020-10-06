@@ -4,7 +4,7 @@ def merge(arrA, arrB):
     merged_arr = [0] * elements
 
     # Your code here
-    i = l = r = 0
+    l = r = 0
 
     for i in range(elements):
         if l >= len(arrA):
@@ -43,32 +43,13 @@ def merge_sort(arr):
 # or data structures; it can only re-use the memory it was given as input
 def merge_in_place(arr, start, mid, end):
     # Your code here
-    left = arr[start:mid]
-    right = arr[mid:end + 1]
-    print(left, right)
-    i = l = r = 0
+    pass
 
-    for i in range(len(arr)):
-        if l >= len(left):
-            arr[i] = right[r]
-            r += 1
-        elif r >= len(right):
-            arr[i] = left[l]
-            l += 1
-        elif left[l] < right[r]:
-            arr[i] = left[l]
-            l += 1
-        else:
-            arr[i] = right[r]
-            r += 1
-    return arr
+    
 
 
 def merge_sort_in_place(arr, l, r):
     # Your code here
-    if len(arr) > 1:
-        m = len(arr) // 2
-        return merge_in_place(arr, l, m, r)
-    return arr
+    pass
     
 
